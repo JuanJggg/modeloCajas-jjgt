@@ -2,30 +2,30 @@
     background-color: orange;
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "menu content content"
+    "footer footer footer";
 }
 
 .header{
     background: purple;
     height: 60px;
-}
-
-.wrapper{
-    background: blue;
-    display: flex;
-    /*flex-direction: row-reverse;*/
+    grid-area: header;
 }
 
 .menu{
     background: green;
-    width: 30%;
+    grid-area: menu;
 }
 
 .content{
     background: aqua;
-    width: 70%;
+    grid-area: content;
 }
 
 .footer{
     background: red;
-    clear: both;
+    grid-area: footer;
 }
